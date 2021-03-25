@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.lang.annotation.Annotation;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -22,6 +23,8 @@ public class MainApplication {
 
         //从容器中获取组件
         //Optional<Pet> tom = Optional.ofNullable(run.getBean("tom", Pet.class)) ;
+        Annotation[]  annotations = SpringBootApplication.class.getAnnotations();
+        Arrays.stream(annotations).forEach(t -> System.out.println(t));
 
 
     }
