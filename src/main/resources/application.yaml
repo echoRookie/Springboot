@@ -3,3 +3,6 @@ spring:
 #    static-path-pattern: /res/**
   resources:
     static-locations: [classpath:/test/]
+
+dog:
+  name: test
