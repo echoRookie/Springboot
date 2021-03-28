@@ -28,6 +28,5 @@ public class MainApplication {
 //        Arrays.stream(annotations).forEach(t -> System.out.println(t));
         Dog dog = run.getBean(Dog.class);
         System.out.println(dog.getName());
-
     }
 }
